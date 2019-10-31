@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jomolhari&display=swap");
+
+h1 {
+  font-family: "Jomolhari", serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* --------------------------------------- FORSIDE -----------------------------------------------*/
+
+#button-con {
+  position: absolute;
+  top: 5px;
+  left: 80vw;
+}
+
+button {
+  background-color: transparent;
+  border: solid 1px #47525e;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  color: #47525e;
+}
+
+button:hover {
+  box-shadow: 3px 7px lightgray;
+}
+
+#tilmed {
+  background-color: #008bd6;
+  border: solid 1px #008bd6;
+  color: #fff;
+}
+
+img {
+  width: 100vw;
+}
+
+#splash {
+  position: absolute;
+  top: 45vh;
+  left: 25vw;
+  z-index: 10;
+  font-size: 4em;
+}
