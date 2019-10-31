@@ -1,31 +1,27 @@
 document.addEventListener("DOMContentLoaded", Init);
 
 function Init() {
-  document.querySelector("#login").addEventListener("click");
-  document.querySelector("#tilmed").addEventListener("click");
+  document.querySelector("#login").addEventListener("click", openModalLogin);
+  document.querySelector("#tilmed").addEventListener("click", openModalTilmed);
+  document.querySelector("#close1").addEventListener("click", closeModalLogin);
+  document.querySelector("#close2").addEventListener("click", closeModalTilmed);
 }
-
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-};
+function openModalLogin() {
+  document.querySelector("#Modallogin").style.display = "block";
+}
+
+function openModalTilmed() {
+  console.log("OI!!");
+  document.querySelector("#Modaltilmed").style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
+function closeModalLogin() {
+  document.querySelector("#Modallogin").style.display = "none";
+}
+function closeModalTilmed() {
+  document.querySelector("#Modaltilmed").style.display = "none";
+}
