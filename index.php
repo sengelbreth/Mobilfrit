@@ -20,6 +20,25 @@
         <h1 id="splash">Velkommen til Mobilfrit-eventyr</h1>
     </div>
 
+    <div id="Modallogin" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>login</p>
+        </div>
+
+    </div>
+    <div id="Modaltilmed" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>tilmed</p>
+        </div>
+
+    </div>
+
     <script src="main.js"></script>
 </body>
 
