@@ -1,6 +1,6 @@
 "use strict";
 
-import TweenMax from "gsap";
+import TweenMax from "gsap/TweenMax";
 
 TweenMax.staggerFrom(
   " .cls-2",
