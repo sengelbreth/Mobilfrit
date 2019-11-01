@@ -156,3 +156,17 @@ input {
 }
 
 /* ---------------------------------------------- Tilmeldt -------------------------------------------*/
+
+#h1tilmeldt {
+  text-align: center;
+  color: #47525e;
+  font-family: "Jomolhari", serif;
+  font-size: 3em;
+}
+
+svg {
+  margin-left: 25%;
+  margin-top: 10%;
+  width: 50vw;
+  height: 50vh;
+}

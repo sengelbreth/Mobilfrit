@@ -103,8 +103,8 @@
         <div class="modal-content">
             <span id="close1">&times;</span>
             <form id="frmLogin" method="POST">
-                <input name="txtEmail" data-type="email" type="text" value="a@b.com">
-                <input name="txtPassword" type="password" type="text" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20" value="a1pass">
+                <input name="txtEmail" data-type="email" type="text" placeholder="Email">
+                <input name="txtPassword" type="password" type="text" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20" placeholder="Kodeord">
                 <button id="btnLogin">Log på</button>
             </form>
         </div>
@@ -119,14 +119,14 @@
             <p class="fromtext">Lav en bruger og find en aktivitet der passer dig </p>
             <form id="frmLsignup" action="" method="POST">
 
-                <input name="txtName" type="text" placeholder="fornavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
-                <input name="txtLastName" type="text" placeholder="efternavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
-                <input name="txtEmail" type="text" placeholder="email" data-type="email">
-                <input name="txtPassword" type="password" placeholder="kodeord" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20">
+                <input name="txtName" type="text" placeholder="Fornavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
+                <input name="txtLastName" type="text" placeholder="Efternavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
+                <input name="txtEmail" type="text" placeholder="Email" data-type="email">
+                <input name="txtPassword" type="password" placeholder="Kodeord" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20">
                 <button id="signup">Tilmeld</button>
 
             </form>
-            <p class="fromtext">By signing up you agree to our
+            <p class="fromtext">By signing up you agree to our<br>
                 Terms & Conditions</p>
         </div>
 
