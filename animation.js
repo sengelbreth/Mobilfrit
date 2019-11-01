@@ -1,4 +1,6 @@
-import TweenMax from "gsap/TweenMax";
+"use strict";
+
+import TweenMax from "gsap";
 
 TweenMax.staggerFrom(
   " .cls-2",
