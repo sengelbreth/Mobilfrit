@@ -44,16 +44,16 @@
     if ($_POST) {
 
         if (empty($_POST['txtEmail'])) {
-            header('Location: signup.php');
+            header('Location: index.php');
         }
         if (empty($_POST['txtPassword'])) {
-            header('Location: signup.php');
+            header('Location: index.php');
         }
         if (empty($_POST['txtName'])) {
-            header('Location: signup.php');
+            header('Location: index.php');
         }
         if (empty($_POST['txtLastName'])) {
-            header('Location: signup.php');
+            header('Location: index.php');
         }
 
         $sName = $_POST['txtName'];
@@ -78,6 +78,7 @@
         $jUsers->$sUniqueId = $jUser;
         $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
         file_put_contents('users.json', $sUsers);
+        header('Location: tilmeld.html');
     }
 
 
@@ -104,7 +105,7 @@
             <form id="frmLogin" method="POST">
                 <input name="txtEmail" data-type="email" type="text" value="a@b.com">
                 <input name="txtPassword" type="password" type="text" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20" value="a1pass">
-                <button id="btnLogin" onclick="return login(this);" data-start="LOGIN" data-wait="WAIT ...">LOGIN</button>
+                <button id="btnLogin">Log på</button>
             </form>
         </div>
 
@@ -114,13 +115,19 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span id="close2">&times;</span>
-            <form id="frmLogin" action="" method="POST">
-                <input name="txtName" type="text" placeholder="Name" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
-                <input name="txtLastName" type="text" placeholder="Last name" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
+            <h1 id="h1from">Velkommen til Mobilfrit-eventyr</h1>
+            <p class="fromtext">Lav en bruger og find en aktivitet der passer dig </p>
+            <form id="frmLsignup" action="" method="POST">
+
+                <input name="txtName" type="text" placeholder="fornavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
+                <input name="txtLastName" type="text" placeholder="efternavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
                 <input name="txtEmail" type="text" placeholder="email" data-type="email">
-                <input name="txtPassword" type="password" placeholder="Last name" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20">
-                <button id="btnLogin" onclick="return login(this);" data-start="LOGIN" data-wait="WAIT ...">signup</button>
+                <input name="txtPassword" type="password" placeholder="kodeord" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20">
+                <button id="signup">Tilmeld</button>
+
             </form>
+            <p class="fromtext">By signing up you agree to our
+                Terms & Conditions</p>
         </div>
 
     </div>
