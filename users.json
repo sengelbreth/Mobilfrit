@@ -12,5 +12,19 @@
         "name": "thomas",
         "lastName": "hansen",
         "password": "a1pass"
+    },
+    "5dbfdd43ce7bf": {
+        "id": "5dbfdd43ce7bf",
+        "email": "sengelbreth",
+        "name": "sdfghjkl.,mnb",
+        "lastName": "yay",
+        "password": "1223457gv"
+    },
+    "5dbfddb990b81": {
+        "id": "5dbfddb990b81",
+        "email": "a@a.com",
+        "name": "nijkn",
+        "lastName": "jkn",
+        "password": "a1pass"
     }
 }
