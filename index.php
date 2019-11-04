@@ -15,7 +15,7 @@
 
 
     if ($_SESSION) {
-        header('Location: profile.php');
+        header('Location: aktiviter.php');
     }
     if ($_POST) {
         if (empty($_POST['email'])) {
@@ -34,7 +34,7 @@
                 $jUser->password == $_POST['txtPassword']
             ) {
                 $_SESSION['jUser'] = $jUser;
-                header('Location: profile.php');
+                header('Location: aktiviter.php');
             }
         }
     }
@@ -78,7 +78,7 @@
         $jUsers->$sUniqueId = $jUser;
         $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
         file_put_contents('users.json', $sUsers);
-        header('Location: tilmeld.html');
+        header('Location: tilmeld.php');
     }
 
 
@@ -95,7 +95,10 @@
 
         <img src="9bedaa54c3c74c82bd95aed2d7802cec.jpg">
         <h1 id="splash">Velkommen til Mobilfrit-eventyr</h1>
+        <h3 id="demo">DETTE ER EN DEMO, BRUG IKKE DIT EGET NAVN OG KODEORD</h3>
     </div>
+
+
 
     <div id="Modallogin" class="modal">
 
@@ -103,9 +106,10 @@
         <div class="modal-content">
             <span id="close1">&times;</span>
             <form id="frmLogin" method="POST">
-                <input name="txtEmail" data-type="email" type="text" placeholder="Email">
+                <input name="txtEmail" data-type="email" type="text" placeholder="brugernavn">
                 <input name="txtPassword" type="password" type="text" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20" placeholder="Kodeord">
                 <button id="btnLogin">Log på</button>
+                <h3>DETTE ER EN DEMO, BRUG IKKE DIT EGET NAVN OG KODEORD</h3>
             </form>
         </div>
 
@@ -121,10 +125,10 @@
 
                 <input name="txtName" type="text" placeholder="Fornavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
                 <input name="txtLastName" type="text" placeholder="Efternavn" maxlength="20" minlength="2" data-type="string" data-min="6" data-max="20">
-                <input name="txtEmail" type="text" placeholder="Email" data-type="email">
+                <input name="txtEmail" type="text" placeholder="brugernavn" data-type="email">
                 <input name="txtPassword" type="password" placeholder="Kodeord" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20">
                 <button id="signup">Tilmeld</button>
-
+                <h3>DETTE ER EN DEMO, BRUG IKKE DIT EGET NAVN OG KODEORD</h3>
             </form>
             <p class="fromtext">By signing up you agree to our<br>
                 Terms & Conditions</p>

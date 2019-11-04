@@ -53,6 +53,14 @@ img {
   left: 25vw;
   font-size: 4em;
 }
+
+#demo {
+  position: absolute;
+  top: 55vh;
+  left: 33vw;
+  color: #fff;
+  font-family: "Jomolhari", serif;
+}
 /* -------------------------------------- MODAL VINDURE FORSIDE ----------------------------------------------------*/
 
 .modal {
