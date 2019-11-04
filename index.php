@@ -78,7 +78,7 @@
         $jUsers->$sUniqueId = $jUser;
         $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
         file_put_contents('users.json', $sUsers);
-        header('Location: tilmeld.html');
+        header('Location: tilmeld.php');
     }
 
 
