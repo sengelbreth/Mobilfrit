@@ -25,7 +25,7 @@
             header('Location: index.php');
         }
 
-        $sjUsers = file_get_contents('users.json');
+        $sjUsers = file_get_contents( __DIR__.'/users.json');
         $jUsers = json_decode($sjUsers);
 
         foreach ($jUsers as $jUser) {
@@ -77,7 +77,7 @@
 
         $jUsers->$sUniqueId = $jUser;
         $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
-        file_put_contents('users.json', $sUsers);
+        file_put_contents( __DIR__.'/users.json', $sUsers);
         header('Location: tilmeld.php');
     }
 
