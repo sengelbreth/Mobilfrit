@@ -11,8 +11,21 @@
 
 <body>
 
-    <h1></h1>
+    <h1>Lav en aktivitet</h1>
 
+    <div class="grid-container">
+        <div class="grid-item">
+            <form>
+                <input id="in1" class="grid-itm" type="text" placeholder="Titel...">
+                <input id="in2" class="grid-itm" type="text" placeholder="Skriv en beskrivelse her...">
+                <input id="in3" class="grid-itm" type="text" placeholder="Sted...">
+                <input id="in4" class="grid-itm" type="text" placeholder="Tid...">
+                <input id="in5" class="grid-itm" type="text" placeholder="Dato...">
+            </form>
+        </div>
+        <div class="grid-item1"></div>
+
+    </div>
 
 </body>
 

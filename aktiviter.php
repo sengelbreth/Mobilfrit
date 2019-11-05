@@ -70,7 +70,7 @@
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
-        <div class="grid-item"><a href="" id="lav">Lav en aktivitet</a></div>
+        <div class="grid-item"><a href="lav.php" id="lav">Lav en aktivitet</a></div>
 
     </div>
 
