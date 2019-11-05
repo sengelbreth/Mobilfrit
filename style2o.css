@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jomolhari&display=swap");
+
+h1 {
+  font-family: "Jomolhari", serif;
+}
+
+body {
+  overflow: hidden;
+}
