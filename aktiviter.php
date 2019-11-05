@@ -47,26 +47,26 @@
                 <option value="audi">alle</option>
             </select> </div>
 
-        <div class="grid-item"><img src="profile.png"> <a href="logud.php" id="logaf">Log ud</a></div>
+        <div class="grid-item"><a href="profil.php"><img src="profile.png"></a> <a href="logud.php" id="logaf">Log ud</a></div>
 
     </div>
     <div class="grid-container1">
-        <div class="grid-item1"><a href="">Tegne klub</a></div>
-        <div class="grid-item1"><a href="">Bag en kage</a></div>
-        <div class="grid-item1"><a href="">Lave aftensmad</a></div>
-        <div class="grid-item1"><a href="">Gå tur</a></div>
-        <div class="grid-item1"><a href="">Løb en tur</a></div>
-        <div class="grid-item1"><a href="">Gå tur med hund</a></div>
-        <div class="grid-item1"><a href="">Bordtennis kamp</a></div>
-        <div class="grid-item1"><a href="">Shoppe tur</a></div>
-        <div class="grid-item1"><a href=""></a>Klippe klister</div>
-        <div class="grid-item1"><a href=""></a>Tur på rulleskøjter</div>
-        <div class="grid-item1"><a href=""></a>Stangtennis kamp</div>
-        <div class="grid-item1"><a href=""></a>Stoldans/stopdans</div>
-        <div class="grid-item1"><a href=""></a>Fodbold</div>
-        <div class="grid-item1"><a href=""></a>Bygge lego</div>
-        <div class="grid-item1"><a href=""></a>Sleep over</div>
-        <div class="grid-item1"><a href="">Lege aftale</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Tegne klub</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Bag en kage</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Lave aftensmad</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Gå tur</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Løb en tur</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Gå tur med hund</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Bordtennis kamp</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Shoppe tur</a></div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Klippe klister</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Tur på rulleskøjter</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Stangtennis kamp</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Stoldans/stopdans</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Fodbold</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Bygge lego</div>
+        <div class="grid-item1"><a href="tilmeldativ.php"></a>Sleep over</div>
+        <div class="grid-item1"><a href="tilmeldativ.php">Lege aftale</a></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>
         <div class="grid-item"></div>

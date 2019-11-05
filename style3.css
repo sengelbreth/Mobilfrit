@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jomolhari&display=swap");
+
+h1 {
+  font-family: "Jomolhari", serif;
+  color: #47525e;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  width: 400px;
+  margin-left: 40vw;
+  margin-top: 4vw;
+}
+
+body {
+  overflow: hidden;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+  margin-top: 15vw;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 25vw;
+  margin-right: 30vw;
+}
+.grid-item1 {
+  background-color: #e5e9f2;
+  width: 500px;
+  margin-top: 10px;
+}
+
+.grid-item {
+  display: grid;
+  align-content: center;
+}
+
+a:visited {
+  color: #fff;
+} /* Visited link    */
+a:hover {
+  color: #fff;
+  cursor: pointer;
+} /* Mouse over link */
+a:active {
+  color: #fff;
+}
+a {
+  margin-top: 5px;
+  float: right;
+  text-decoration: none;
+  background-color: #008bd6;
+  border-radius: 5px;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Jomolhari", serif;
+  text-align: center;
+  border: none;
+  padding: 15px;
+}
+
+p {
+  color: #8190a5;
+  font-family: "Jomolhari", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 375.74px;
+  text-align: left;
+}
+
+h3 {
+  color: #47525e;
+  font-family: "Jomolhari", serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33px;
+  width: 375.74px;
+  text-align: left;
+}

@@ -24,9 +24,9 @@
             </form>
         </div>
         <div class="grid-item1"></div>
-
+        <div></div>
+        <div><a href="aktiviter.php">Lav aktivitet</a> </div>
     </div>
-
 </body>
 
 </html>
