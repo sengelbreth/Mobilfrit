@@ -17,79 +17,16 @@
     if ($_SESSION) {
         header('Location: aktiviter.php');
     }
-    if ($_POST) {
-        if (empty($_POST['email'])) {
-            header('Location: index.php');
-        }
-        if (empty($_POST['password'])) {
-            header('Location: index.php');
-        }
-
-        $sjUsers = file_get_contents( __DIR__.'/users.json');
-        $jUsers = json_decode($sjUsers);
-
-        foreach ($jUsers as $jUser) {
-            if (
-                $jUser->email == $_POST['txtEmail'] &&
-                $jUser->password == $_POST['txtPassword']
-            ) {
-                $_SESSION['jUser'] = $jUser;
-                header('Location: aktiviter.php');
-            }
-        }
-    }
-
-
-
-    if ($_POST) {
-
-        if (empty($_POST['txtEmail'])) {
-            header('Location: index.php');
-        }
-        if (empty($_POST['txtPassword'])) {
-            header('Location: index.php');
-        }
-        if (empty($_POST['txtName'])) {
-            header('Location: index.php');
-        }
-        if (empty($_POST['txtLastName'])) {
-            header('Location: index.php');
-        }
-
-        $sName = $_POST['txtName'];
-        $sLastName  = $_POST['txtLastName'];
-        $sEmail =  $_POST['txtEmail'];
-        $sPassword = $_POST['txtPassword'];
-        $sUniqueId = uniqid();
-
-        $jUser = new stdClass();
-        $jUser->id =  $sUniqueId;
-        $jUser->email = $sEmail;
-        $jUser->name = $sName;
-        $jUser->lastName = $sLastName;
-        $jUser->password = $sPassword;
-
-        $sUser = json_encode($jUser);
-
-
-        $sUsers = file_get_contents('users.json');
-        $jUsers = json_decode($sUsers);
-
-        $jUsers->$sUniqueId = $jUser;
-        $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
-        file_put_contents( __DIR__.'/users.json', $sUsers);
-        header('Location: tilmeld.php');
-    }
-
-
-
 
     ?>
 
 
+
+
+
     <div>
         <div id="button-con">
-            <button id="login">Log på</button>
+            <a id="login" href="login.php">Log på</a>
             <button id="tilmed">Tilmeld dig</button>
         </div>
 
@@ -100,25 +37,56 @@
 
 
 
-    <div id="Modallogin" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span id="close1">&times;</span>
-            <form id="frmLogin" method="POST">
-                <input name="txtEmail" data-type="email" type="text" placeholder="brugernavn">
-                <input name="txtPassword" type="password" type="text" maxlength="20" minlength="6" data-type="string" data-min="6" data-max="20" placeholder="Kodeord">
-                <button id="btnLogin">Log på</button>
-                <h3>DETTE ER EN DEMO, BRUG IKKE DIT EGET NAVN OG KODEORD</h3>
-            </form>
-        </div>
-
-    </div>
     <div id="Modaltilmed" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <span id="close2">&times;</span>
+            <?php
+            if ($_POST) {
+
+                if (empty($_POST['txtEmail'])) {
+                    header('Location: index.php');
+                }
+                if (empty($_POST['txtPassword'])) {
+                    header('Location: index.php');
+                }
+                if (empty($_POST['txtName'])) {
+                    header('Location: index.php');
+                }
+                if (empty($_POST['txtLastName'])) {
+                    header('Location: index.php');
+                }
+
+                $sName = $_POST['txtName'];
+                $sLastName  = $_POST['txtLastName'];
+                $sEmail =  $_POST['txtEmail'];
+                $sPassword = $_POST['txtPassword'];
+                $sUniqueId = uniqid();
+
+                $jUser = new stdClass();
+                $jUser->id =  $sUniqueId;
+                $jUser->email = $sEmail;
+                $jUser->name = $sName;
+                $jUser->lastName = $sLastName;
+                $jUser->password = $sPassword;
+
+                $sUser = json_encode($jUser);
+
+
+                $sUsers = file_get_contents('users.json');
+                $jUsers = json_decode($sUsers);
+
+                $jUsers->$sUniqueId = $jUser;
+                $sUsers = json_encode($jUsers, JSON_PRETTY_PRINT);
+                file_put_contents(__DIR__ . '/users.json', $sUsers);
+                header('Location: tilmeld.php');
+            }
+
+
+
+
+            ?>
             <h1 id="h1from">Velkommen til Mobilfrit-eventyr</h1>
             <p class="fromtext">Lav en bruger og find en aktivitet der passer dig </p>
             <form id="frmLsignup" action="" method="POST">

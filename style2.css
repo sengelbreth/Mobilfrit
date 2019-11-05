@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Jomolhari&display=swap");
+
+h1 {
+  font-family: "Jomolhari", serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* --------------------------------------------- ATIVTERER ------------------------------------------------------*/
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-container1 {
+  margin-top: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-item {
+  border: solid 2px black;
+}
+
+.search-container {
+  float: right;
+}
+
+input[type="text"] {
+  padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border: solid 1px #8492a6;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 4px;
+  margin-right: 16px;
+  background: #ddd;
+  border-radius: 5px;
+  font-size: 17px;
+  border: solid 1px #8492a6;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+select {
+  background-color: #ffffff;
+  border: 1px solid #8492a6;
+  border-radius: 5px;
+  width: 223.27px;
+  height: 42px;
+}
+
+img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}

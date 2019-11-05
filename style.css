@@ -32,6 +32,21 @@ button {
   color: #47525e;
 }
 
+a {
+  background-color: transparent;
+  border: solid 1px #47525e;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  color: #47525e;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: 3px 7px lightgray;
+  cursor: pointer;
+}
+
 button:hover {
   box-shadow: 3px 7px lightgray;
   cursor: pointer;
@@ -75,6 +90,17 @@ img {
   background-color: #e5e9f2;
   background-color: rgba(229, 233, 242, 0.4);
 }
+.modallogin {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #e5e9f2;
+  background-color: rgba(229, 233, 242, 0.4);
+}
 
 .modal-content {
   background-color: #fefefe;
@@ -82,13 +108,6 @@ img {
   padding: 25px;
   width: 50%; /* Could be more or less, depending on screen size */
   text-align: center;
-}
-
-#close1 {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
 }
 
 #close1:hover,
